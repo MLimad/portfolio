@@ -37,11 +37,24 @@ header .left{
     position: relative;
 }
 
+@media only screen and (max-width: 600px) {
+    header .left {
+        width: 0;
+    }
+  }
+
+
 header .right{
     width: 75%;
     height: 100%;
 
 }
+
+@media only screen and (max-width: 600px) {
+    header .right {
+        width: 100%;
+    }
+  }
 
 header .right nav {
     width: 100%;
@@ -89,15 +102,33 @@ header .content-header{
     line-height: 0.9;
 }
 
+@media only screen and (max-width: 600px) {
+    header .content-header{
+        left: 50px;
+    }
+  }
+
 header .content-header h1{
     font-size: 60px;
 font-weight: bold;
 }
 
+@media only screen and (max-width: 600px) {
+    header .content-header h1{
+        font-size: 40px;
+    }
+  }
+
 header .light-text{
     font-weight: 200;
     font-size: 40px;
 }
+
+@media only screen and (max-width: 600px) {
+    header .light-text{
+        font-size: 30px;
+    }
+  }
 
 header .marked{
     background-color: #f7ff00;
@@ -110,6 +141,13 @@ header .marked{
     font-size: 28px;
 
 }
+
+@media only screen and (max-width: 600px) {
+    header .marked{
+       font-size: 20px;
+       margin: 0;    
+    }
+  }
 
 header nav ul{
     display: flex;
@@ -125,6 +163,17 @@ header nav ul li{
     font-weight: bold;
 
 }
+
+@media only screen and (max-width: 600px) {
+    
+    header nav ul li {
+        line-height: 4;
+        margin: 0 1%;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+  }
 
 
 header nav a{
@@ -161,6 +210,17 @@ header nav .active{
     z-index: 1;
     position: relative;
 }
+
+@media only screen and (max-width: 600px) {
+    .about .left-img{
+        width: 350px;
+        height:350px;
+        margin: auto;
+        
+    }
+  }
+
+
 .about .left-img::before {
 	content: "";
 	position: absolute;
@@ -171,6 +231,15 @@ header nav .active{
 	left: -40px;
 	z-index: -1;
 }
+
+@media only screen and (max-width: 600px) {
+    .about .left-img::before {
+        width: 350px;
+        height: 350px;
+        top: -25px;
+        left: -15px;
+    }
+  }
 
 .about .left-img img{
     width: 100%;
@@ -202,6 +271,13 @@ header nav .active{
     position: relative;
 }
 
+@media only screen and (max-width: 600px) {
+    .about .bio {
+        margin: 30px;
+
+    }
+  }
+
 .about .bio h2{
     font-size: 47px;
 color: #262626;
@@ -215,11 +291,12 @@ z-index: 1;
 	content: "";
 	position: absolute;
 	z-index: -1;
-	width: 31%;
+	width: 156px;
 	height: 15px;
 	background-color: #f7ff00;
 	bottom: 14px;
 }
+
 
 .about .bio span {
 	font-size: 20px;
@@ -250,6 +327,12 @@ z-index: 1;
 	z-index: -1;
 }
 
+@media only screen and (max-width: 600px) {
+    .about .dots-about {
+        display: none;
+    }
+  }
+
 /* End About */
 
 /* Start Works */
@@ -265,6 +348,13 @@ z-index: 1;
 	right: 110px;
 	height: 322px;
 }
+
+@media only screen and (max-width: 600px) {
+    .works .dots-works {
+        display: none;
+
+    }
+  }
 
 .works .heading-work {
 	position: relative;
@@ -291,6 +381,12 @@ z-index: 1;
 	z-index: 1;
 }
 
+@media only screen and (max-width: 600px) {
+    .works .heading-work h1::before {
+        right: 75px;
+    }
+  }
+
 .works .heading-work h1::after {
 	content: "";
 	width: 162px;
@@ -300,6 +396,15 @@ z-index: 1;
 	bottom: -7px;
 	right: 44px;
 }
+
+@media only screen and (max-width: 600px) {
+    .works .heading-work h1::after {
+        bottom: -10px;
+        right: 73px;
+    }
+  }
+
+
 
 
 .works .heading-work .circle-1 {
@@ -344,6 +449,12 @@ z-index: 1;
     transition: 0.5s;
 }
 
+@media only screen and (max-width: 600px) {
+    .works nav ul li{
+       font-size: 14px;    
+    }
+  }
+
 .works nav ul li.active , .works nav ul li:hover{
     border-bottom: 3px solid #f7ff00;
     width: fit-content;
@@ -360,6 +471,13 @@ z-index: 1;
     position: relative;
 }
 
+@media only screen and (max-width: 600px) {
+    .works .items-projects {
+        width: 350px;
+    }
+  }
+
+
 .works .items-projects .item{
     width: 200px;
     height: 200px;
@@ -371,6 +489,13 @@ z-index: 1;
     position: relative;
     
 }
+
+@media only screen and (max-width: 600px) {
+    .works .items-projects .item{
+        width: 150px;
+        height: 150px;   
+    }
+  }
 
 .works .items-projects .item::before{
     content: "";
@@ -473,6 +598,14 @@ z-index: 1;
 	right: 114px;
 }
 
+@media only screen and (max-width: 600px) {
+    .subscribe .heading-sub .square {
+        top: -8px;
+        right: 91px;
+    }
+    
+  }
+
 .subscribe .heading-sub h1::before {
 	content: "subscribe to";
 	position: absolute;
@@ -482,6 +615,13 @@ z-index: 1;
 	font-weight: lighter;
     text-transform: capitalize;
 }
+
+@media only screen and (max-width: 600px) {
+    .subscribe .heading-sub h1::before{
+        top: -16px;
+        left: 86px;
+    }
+  }
 
 .subscribe .heading-sub h1::after {
 	content: "";
@@ -493,6 +633,14 @@ z-index: 1;
 	top: 19px;
 	z-index: -1;
 }
+
+@media only screen and (max-width: 600px) {
+    .subscribe .heading-sub h1::after{
+        left: 87px;
+        top: 8px;
+        width: 134px;
+    }
+  }
 
 .subscribe p {
 	width: 400px;
@@ -507,7 +655,6 @@ z-index: 1;
 .subscribe .sub-email{
     position: relative;
     margin: auto;
-    width: 490px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -538,6 +685,21 @@ z-index: 1;
     background-color: #262626;
     color: white;
 }
+
+@media only screen and (max-width: 600px) {
+    .subscribe .sub-email input:first-of-type{
+        display: block;
+        margin: auto;
+    
+    }
+    .subscribe .sub-email input:last-of-type{
+        display: block;
+        margin: 10px auto;
+
+    }
+  }
+
+
 /* End Subscribe */
 
 /* Start Clients  */
@@ -572,6 +734,16 @@ z-index: 1;
 	z-index: -1;
 }
 
+@media only screen and (max-width: 600px) {
+    .clients .heading-clients h1::before {
+        width: 180px;
+        bottom: 8px;
+        left: 60px;
+    }
+  }
+
+
+
 .clients .heading-clients h1::after {
 	content: "some reviews of";
 	position: absolute;
@@ -581,6 +753,13 @@ z-index: 1;
 	font-weight: lighter;
 	font-size: 18px;
 }
+
+@media only screen and (max-width: 600px) {
+    .clients .heading-clients h1::after {
+        top: -15px;
+        left: 62px;
+    }
+  }
 
 .clients .reviews {
 	width: 500px;
@@ -593,6 +772,14 @@ z-index: 1;
 	margin-top: 30px;
     border-radius: 3px;
 }
+
+@media only screen and (max-width: 600px) {
+    .clients .reviews {
+        width: 400px;
+        height: 300px;
+       
+    }
+  }
 
 .clients .reviews::before {
 	content: " \f10d ";
@@ -618,6 +805,15 @@ z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+@media only screen and (max-width: 600px) {
+    .clients .reviews .profile {
+        width: 90px;
+        height: 90px;
+        top: 297px;
+        right: 59px;
+    }
+  }
+
 .clients .reviews .profile img{
     width: 100%;
     height: 100%;
@@ -629,6 +825,14 @@ z-index: 1;
     top: 126px;
     left: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .clients .info-profile{
+        position: absolute;
+        top: 93px;
+        left: 0;
+    }
+  }
 
 .clients .info-profile h4{
     font-weight: bold;
@@ -651,12 +855,26 @@ z-index: 1;
 	height: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+    .clients .info-profile::before{
+       display: none;
+    }
+  }
+
+
 .clients .dots-clients {
 	position: absolute;
 	top: 85px;
 	left: 206px;
 	width: 150px;
 }
+
+@media only screen and (max-width: 600px) {
+    .clients .dots-clients {
+      display: none;
+    }
+  }
+
 
 .clients .pagination-reviews{
     width: 300px;
@@ -684,15 +902,17 @@ z-index: 1;
 }
 
 .clients .clients-img{
-    width: 800px;
     display: flex;
     justify-content: space-evenly;
     margin: 40px auto 0 auto;
     flex-wrap: wrap;
 }
 .clients .clients-img ul{
+    width: 800px;
+
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .clients .clients-img li{
@@ -742,6 +962,14 @@ z-index: 1;
     z-index: 1;
     color: #262626;
 }
+
+@media only screen and (max-width: 600px) {
+    .contact .heading-contact h1::before {
+        top: -18px;
+        left: 82px;
+    }
+  }
+
 .contact .heading-contact h1::after {
 	content: "";
 	position: absolute;
@@ -751,6 +979,16 @@ z-index: 1;
 	width: 135px;
 	height: 22px;
 }
+
+@media only screen and (max-width: 600px) {
+    .contact .heading-contact h1::after {
+        top: -18px;
+        left: 80px;
+    }
+  }
+
+
+
 .contact .email ,
 .contact .phone ,
 .contact address{
@@ -763,6 +1001,16 @@ z-index: 1;
     justify-content: center;
 
 }
+
+@media only screen and (max-width: 600px) {
+    .contact .email ,
+.contact .phone ,
+.contact address{
+   
+    justify-content: flex-start;
+
+}
+  }
 
 .contact .email i,
  .contact .phone i,
@@ -805,6 +1053,14 @@ z-index: 1;
 
 }
 
+@media only screen and (max-width: 600px) {
+    .contact .socials-icons ul li {
+        width: 30px;
+        height: 30px;
+        font-size: 17px;
+    }
+  }
+
 .contact .socials-icons ul li:hover{
     background-color: #f7ff00;
     color: #171717;
@@ -825,4 +1081,11 @@ footer{
     color: white;
     font-weight: 600;
 }
+
+@media only screen and (max-width: 600px) {
+    footer {
+        font-size: 14px;
+        line-height: 2;
+    }
+  }
 /* End Footer  */
