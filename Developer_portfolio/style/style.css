@@ -771,6 +771,11 @@ z-index: 1;
 	padding: 65px;
 	margin-top: 30px;
     border-radius: 3px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -809,8 +814,8 @@ z-index: 1;
     .clients .reviews .profile {
         width: 90px;
         height: 90px;
-        top: 297px;
-        right: 59px;
+        top: 10px;
+        right: 50%;
     }
   }
 
@@ -824,13 +829,16 @@ z-index: 1;
     position: absolute;
     top: 126px;
     left: 0;
+    width: 122px;
 }
 
 @media only screen and (max-width: 600px) {
-    .clients .info-profile{
+    .clients .info-profile {
         position: absolute;
-        top: 93px;
-        left: 0;
+        top: 50%;
+        left: 99px;
+        width: 101px;
+        transform: translateY(-50%);
     }
   }
 
@@ -849,8 +857,8 @@ z-index: 1;
 	content: "";
 	position: absolute;
 	top: 47px;
-	right: -6px;
-	background-color: #f7ff00;
+    right: 30px;
+    background-color: #f7ff00;
 	width: 20px;
 	height: 20px;
 }
@@ -875,31 +883,6 @@ z-index: 1;
     }
   }
 
-
-.clients .pagination-reviews{
-    width: 300px;
-    height: 20px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.clients .pagination-reviews span{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: transparent;
-    border:2px solid #727272;
-    margin: 8px;
-    cursor: pointer;
-
-}
-.clients .pagination-reviews span.active{
-    background-color: #727272;
-
-}
 
 .clients .clients-img{
     display: flex;
@@ -1089,3 +1072,34 @@ footer{
     }
   }
 /* End Footer  */
+
+.slick-dots li.slick-active button::before {
+	opacity: .75;
+	color: #000;
+	width: 15px;
+	height: 15px;
+	background-color: #717171;
+	border-radius: 50%;
+}
+
+.slick-dots li button::before {
+	font-family: slick;
+	font-size: 6px;
+	line-height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	content: '';
+	text-align: center;
+	opacity: .25;
+	color: #000;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: transparent;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 2px solid #727272;
+}
